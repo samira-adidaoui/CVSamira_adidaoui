@@ -1,0 +1,189 @@
+html {
+  height: 100vh;
+  /* background-color: red; */
+}
+.container {
+  display: flex;
+  font-family: "Catamaran", sans-serif;
+  align-content: center;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  text-decoration: underline;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+/* Partie de Gauche */
+#left_part {
+  background-color:rgb(121, 194, 169);
+  width: 40%;
+}
+
+#photo {
+  border-radius: 50%;
+  border: solid 5px #00a876;
+}
+
+#name {
+  margin: 20px auto;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-position: under;
+  color: #006d4c ;
+}
+
+#left_part h2 {
+  background-color: #006d4c;
+  text-align: center;
+  color: white;
+  margin: 5px auto;
+  padding: 10px;
+  font-weight: 300;  
+}
+
+.presentation > p {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 5px 0;
+  height: 200px;
+}
+
+.info li {
+  width: 400px;
+  padding: 0 20px;
+  height: 30px;
+  font-size: rem;
+}
+
+/* Compétences */
+
+.skills h3 {
+  text-align: center;
+}
+
+.skill {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.skills ul li {
+  width: 230px;
+  padding-left: 20px;
+}
+
+.skills ul li i {
+  width: 25px;
+}
+
+.logo {
+  width: 40px;
+  border-radius: 50px;
+}
+
+/* Loisirs */
+
+.hobbies {
+  display: flex;
+  flex: row;
+  padding: 0 10px;
+}
+
+.hobbies li {
+  width: 250px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+/* Partie de droite */
+
+#right_part {
+  width: 60%;
+  background-color: white;
+  padding: 30px;
+  
+}
+
+#title {
+  color: #006d4c;
+  text-decoration: underline black;
+  text-underline-position: under;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+#right_part h2 {
+  color: rgb(121, 194, 169);
+  text-align: center;
+  text-decoration: underline #525252;
+}
+
+.part_right_item {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding-left: 15px;
+}
+
+#right_part h3 ~ p {
+  font-weight: bold;
+  padding: 5px;
+}
+
+.list_task {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  padding-left: 5px;
+}
+
+.list_task li {
+  width: 365px;
+  padding-left: 10px;
+}
+
+#oc {
+  width: 180px;
+  display: block;
+  width: 210px;
+}
+
+#cnam {
+  width: 130px;
+  border-radius: 10%;
+  display: block;
+  width: 210px;
+}
+
+.school {
+  text-align: center;
+  width: 500px;
+  height: 50px;
+  padding-left: 50px;
+}
+.school2 {
+    text-align: center;
+    width: 500px;
+    height: 50px;
+    padding-left: 200px;
+  }
