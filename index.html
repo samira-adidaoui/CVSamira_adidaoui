@@ -2,7 +2,22 @@
 <html lang="fr">
     <head>
         <title>CV SAMIRA ADIDAOUI</title>
-        <link rel="stylesheet" type="text/css" href="../css/cv3.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Mobile First -->
+        <link rel="stylesheet" type="text/css" href="css/cv.css" />
+        <!-- Média entre 600 et 980px -->
+        <link
+            rel="stylesheet"
+            media="screen and (min-width: 600px)"
+            href="css/media_tab.css"
+        />
+        <!-- Média supérieur à 980px -->
+        <link
+            rel="stylesheet"
+            media="screen and (min-width:980px)"
+            href="css/media_desktop.css"
+        />
+
         <meta charset="UTF-8" />
         <meta name="author" content="Samira Adidaoui" />
         <meta
@@ -54,27 +69,19 @@
                 <h2><i class="far fa-handshake"></i> Contact</h2>
 
                 <div id="infos">
-                    <p class="item">
-                        <i class="fas fa-map-marker-alt fa-2x"></i>
-                    </p>
-                    <p class="item">
-                        <i class="fas fa-mobile-alt fa-2x"></i>
-                    </p>
+                    <i class="fas fa-map-marker-alt fa-2x item"></i>
                     <p class="item">Bordeaux - Gironde</p>
+                    <i class="fas fa-mobile-alt fa-2x item"></i>
                     <p class="item">
                         <a href="tel:+33617673897"> +33 (0)6.17.67.38.97</a>
                     </p>
-                    <p class="item">
-                        <i class="far fa-envelope fa-2x"></i>
-                    </p>
-                    <p class="item">
-                        <i class="fab fa-linkedin-in fa-2x"></i>
-                    </p>
+                    <i class="far fa-envelope fa-2x item"></i>
                     <p class="item">
                         <a href="mailto:samira.adidaoui@gmail.com">
                             samira.adidaoui@gmail.com</a
                         >
                     </p>
+                    <i class="fab fa-linkedin-in fa-2x item"></i>
                     <p class="item">www.linkedin.com/in/samira-adidaoui</p>
                 </div>
             </article>
@@ -85,32 +92,22 @@
                 <div class="skills">
                     <h3>Hard Skills</h3>
                     <div class="skill_list">
-                        <p class="list">
-                            <i class="fab fa-js-square fa-2x"></i>
-                        </p>
-                        <p class="list">Javascript</p>
-                        <p class="list">
-                            <i class="fab fa-html5 fa-2x"></i>
-                            <i class="fab fa-css3-alt fa-2x"></i>
+                        <i class="fab fa-js-square fa-2x list"></i>
+                        <p>Javascript</p>
+                        <p id="html_css">
+                            <i class="fab fa-html5 fa-2x" id="html"></i>
+                            <i class="fab fa-css3-alt fa-2x" id="css"></i>
                         </p>
                         <p class="list">HTML5 - CSS3</p>
-                        <p class="list">
-                            <img src="../images/seo.png" width="50px" />
-                        </p>
+                        <i><img src="../images/seo.png" width="50px" /></i>
                         <p class="list">Référencement</p>
-                        <p class="list">
-                            <i class="fab fa-chromecast fa-2x"></i>
-                        </p>
+                        <i class="fab fa-chromecast fa-2x list"></i>
                         <p class="list">Intégration de maquette</p>
-                        <p class="list">
-                            <i class="fas fa-tools fa-2x"></i>
-                        </p>
+                        <i class="fas fa-tools fa-2x list"></i>
                         <p class="list">
                             Maintenance de Site Web et d'applications
                         </p>
-                        <p class="list">
-                            <i class="fas fa-laptop-code fa-2x"></i>
-                        </p>
+                        <i class="fas fa-laptop-code fa-2x list"></i>
                         <p class="list">Construction de site responsive</p>
                     </div>
                 </div>
@@ -118,68 +115,49 @@
                 <div class="skills">
                     <h3>Soft Skills</h3>
                     <div class="skill_list">
-                        <p class="list">
-                            <i class="fas fa-drafting-compass fa-2x"></i>
-                        </p>
+                        <i class="fas fa-drafting-compass fa-2x list"></i>
                         <p class="list">Gestion de Projet</p>
-                        <p class="list">
-                            <i class="far fa-calendar-check fa-2x"></i>
-                        </p>
+                        <i class="far fa-calendar-check fa-2x list"></i>
                         <p class="list">Organisation</p>
-                        <p class="list">
-                            <i class="fas fa-people-arrows fa-2x"></i>
-                        </p>
+                        <i class="fas fa-people-arrows fa-2x list"></i>
                         <p class="list">Travail collaboratif</p>
-                        <p class="list">
-                            <i class="fas fa-glasses fa-2x"></i>
-                        </p>
+                        <i class="fas fa-glasses fa-2x list"></i>
                         <p class="list">Rigueur</p>
-                        <p class="list">
-                            <i class="fas fa-route fa-2x"></i>
-                        </p>
+                        <i class="fas fa-route fa-2x list"></i>
                         <p class="list">Autonomie</p>
-                        <p class="list">
-                            <i class="fas fa-peace fa-2x"></i>
-                        </p>
+                        <i class="fas fa-peace fa-2x list"></i>
                         <p class="list">Gestion du Stress</p>
                     </div>
                 </div>
 
                 <div class="skills">
                     <h3>Langues</h3>
-                    <div class="skill_list">
-                        <p class="list">
-                            <img
-                                class="logo"
-                                src="../images/france.png"
-                                alt="drapeau Français"
-                            />
-                        </p>
-                        <p class="list">Français</p>
-                        <p class="list">
-                            <img
-                                class="logo"
-                                src="../images/england.png"
-                                alt="drapeau Anglais"
-                            />
-                        </p>
-                        <p class="list">Anglais</p>
-                        <p class="list">
-                            <img
-                                class="logo"
-                                src="../images/spain.png"
-                                alt="drapeau Espagnol"
-                            />
-                        </p>
-                        <p class="list">Espagnol</p>
-                        <p class="list">
-                            <img
-                                class="logo"
-                                src="../images/morocco.png"
-                                alt="drapeau Marocain"
-                            />
-                        </p>
-                        <p class="list">Arabe</p>
+                    <div class="language_list">
+                        <img
+                            class="logo"
+                            src="images/france.png"
+                            alt="drapeau Français"
+                        />
+
+                        <p>Français</p>
+                        <img
+                            class="logo"
+                            src="images/england.png"
+                            alt="drapeau Anglais"
+                        />
+                        <p>Anglais</p>
+                        <img
+                            class="logo"
+                            src="images/spain.png"
+                            alt="drapeau Espagnol"
+                        />
+                        <p>Espagnol</p>
+                        <img
+                            class="logo"
+                            src="images/morocco.png"
+                            alt="drapeau Marocain"
+                        />
+                        <p>Arabe</p>
                     </div>
                 </div>
             </article>
@@ -197,8 +175,8 @@
         <!-- Partie de droite -->
         <section id="right_part">
             <!-- En-tête -->
-            <header>
-                <h1 id="title">DEVELOPPEUSE WEB</h1>
+            <header id="title">
+                <h1>DEVELOPPEUSE WEB</h1>
             </header>
 
             <!-- Liste Expériences -->
@@ -216,12 +194,12 @@
                         </p>
 
                         <div>
-                            <p>
+                            <p class="description_task">
                                 Prestation de développement de site Internet et
                                 d'application Web auprès d'associations et
                                 d'artisans :
                             </p>
-                            <div class="list_task">
+                            <div class="list_task1">
                                 <p>
                                     <span class="fas fa-arrow-right"></span>
                                     Création d'un CV
@@ -259,11 +237,11 @@
                             ans) - Bordeaux
                         </p>
                         <div>
-                            <p>
+                            <p class="description_task">
                                 Travaux de comptabilité et de gestion financière
                                 :
                             </p>
-                            <div class="list_task">
+                            <div class="list_task2">
                                 <p>
                                     <span class="fas fa-arrow-right"></span>
                                     garantir la fiabilité et la sincérité des
@@ -307,13 +285,7 @@
                                 Diplôme de niveau 5 (Bac+2), reconnu par l'Etat
                                 et enregistré au RNCP
                             </p>
-                            <p>
-                                <img
-                                    src="../images/oc.png"
-                                    alt="logo_oc"
-                                    id="oc"
-                                />
-                            </p>
+                            <img src="../images/oc.png" alt="logo_oc" id="oc" />
                         </div>
                     </li>
                     <li>
@@ -330,13 +302,11 @@
                                 Diplôme Comptabilité et de Gestion préparé en
                                 ligne avec le Cnam Aquitaine
                             </p>
-                            <p>
-                                <img
-                                    src="../images/cnam.png"
-                                    alt="logo_cnam"
-                                    id="cnam"
-                                />
-                            </p>
+                            <img
+                                src="../images/cnam.png"
+                                alt="logo_cnam"
+                                id="cnam"
+                            />
                         </div>
                     </li>
                     <li>
@@ -359,49 +329,76 @@
             <!-- Réalisations -->
             <article id="production">
                 <h2><i class="far fa-chart-bar"></i> Mes Réalisations</h2>
+                <div id="portfolio">
+                    <div class="part_right_item">
+                        <h3><i class="fas fa-code"></i> Sites Web</h3>
 
-                <div class="part_right_item">
-                    <h3><i class="fas fa-code"></i> Sites Web</h3>
-                    <div class="list_task">
-                        <p>
-                            <span class="fas fa-arrow-right"></span> Création de
-                            CV en ligne
-                        </p>
-                        <p>
-                            <span class="fas fa-arrow-right"></span> Création de
-                            menu de restaurant dynamique
-                        </p>
-                        <p>
-                            <span class="fas fa-arrow-right"></span>
-                            Optimisation de site web
-                        </p>
-                        <p>
-                            <span class="fas fa-arrow-right"></span>
-                            Référencement
-                        </p>
-                        <p>
-                            <span class="fas fa-arrow-right"></span> Site
-                            e-commerce
-                        </p>
-                        <p>
-                            <span class="fas fa-arrow-right"></span> Création de
-                            Blog
-                        </p>
+                        <div class="list_task2">
+                            <p>
+                                <span class="fas fa-arrow-right"></span>
+                                Création de CV en ligne
+                            </p>
+                            <p>
+                                <span class="fas fa-arrow-right"></span>
+                                Création de menu de restaurant dynamique
+                            </p>
+                            <p>
+                                <span class="fas fa-arrow-right"></span>
+                                Optimisation de site web
+                            </p>
+                            <p>
+                                <span class="fas fa-arrow-right"></span>
+                                Référencement
+                            </p>
+                            <p>
+                                <span class="fas fa-arrow-right"></span> Site
+                                e-commerce
+                            </p>
+                            <p>
+                                <span class="fas fa-arrow-right"></span>
+                                Création de Blog
+                            </p>
+                        </div>
+                    </div>
+                    <div class="part_right_item">
+                        <h3><i class="fas fa-code"></i> Applications</h3>
+                        <ul class="list_task3">
+                            <li>
+                                <span class="fas fa-arrow-right"></span>
+                                Création d'Api sécurisée
+                            </li>
+                            <li>
+                                <span class="fas fa-arrow-right"></span>
+                                Création et mise en place de RSE
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="part_right_item">
-                    <h3><i class="fas fa-code"></i> Applications</h3>
-                    <ul class="list_task">
-                        <li>
-                            <span class="fas fa-arrow-right"></span> Création
-                            d'Api sécurisée
-                        </li>
-                        <li>
-                            <span class="fas fa-arrow-right"></span> Création et
-                            mise en place de RSE
-                        </li>
-                    </ul>
+            </article>
+            <article >
+                <h2 ><i class="fas fa-check"></i>Recommandations</h2>
+            <div id="recommendation">
+                <div class="part_right_item1">
+                    <p>CHRISTOPHE GILLES</p>
+                    <p>Mentor OpenClassrooms</p>
+                    <p>
+                        <a href="mailto:contact@cgilles.com"
+                            >contact@cgilles.com</a
+                        >
+                    </p>
+                    <p><a href="tel:0640913946">+33 (0)6.40.91.39.46</a></p>
                 </div>
+                <div class="part_right_item1">
+                    <p>PRENOM NOM</p>
+                    <p>Profession</p>
+                    <p>
+                        <a href="mailto:contact@email.com"
+                            >contact@email.com</a
+                        >
+                    </p>
+                    <p><a href="tel:01234567">+33 (0)1.23.45.67.89</a></p>
+                </div>
+            </div>
             </article>
         </section>
     </body>

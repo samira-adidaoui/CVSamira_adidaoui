@@ -1,189 +1,228 @@
-html {
-  height: 100vh;
-  /* background-color: red; */
+* {
+    margin: 0;
+    padding: 0;
 }
+
 .container {
-  display: flex;
-  font-family: "Catamaran", sans-serif;
-  align-content: center;
+    font-family: "Catamaran", sans-serif;
 }
 
 h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 2rem;
-  margin-bottom: 50px;
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
 }
 
 h2 {
-  font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 h3 {
-  font-family: "Roboto", sans-serif;
-  text-decoration: underline;
+    font-family: "Roboto", sans-serif;
+    text-decoration: underline;
 }
 
 ul li {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 /* Partie de Gauche */
+
 #left_part {
-  background-color:rgb(121, 194, 169);
-  width: 40%;
+    background-color: rgb(121, 194, 169);
 }
 
 #photo {
-  border-radius: 50%;
-  border: solid 5px #00a876;
+    display: none;
+    border-radius: 40%;
+    border: solid 5px rgb(147, 175, 162);
+    width: 150px;
 }
 
 #name {
-  margin: 20px auto;
-  text-align: center;
-  text-decoration: underline;
-  text-underline-position: under;
-  color: #006d4c ;
+    margin: auto;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: black;
+    padding: 30px 0;
 }
 
 #left_part h2 {
-  background-color: #006d4c;
-  text-align: center;
-  color: white;
-  margin: 5px auto;
-  padding: 10px;
-  font-weight: 300;  
+    background-color: #006d4c;
+    text-align: center;
+    color: white;
+    margin: 5px auto;
+    padding: 10px;
+    font-weight: 300;
 }
-
+.presentation {
+    margin: 50px 0 10px;
+}
 .presentation > p {
-  padding: 0 20px;
-  text-align: center;
+    margin: 16px;
+    padding: 0 20px;
+    text-align: center;
 }
 
-.info {
-  display: flex;
-  flex-flow: row wrap;
-  padding: 5px 0;
-  height: 200px;
+/* Contact */
+#infos {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    
 }
 
-.info li {
-  width: 400px;
-  padding: 0 20px;
-  height: 30px;
-  font-size: rem;
+#infos i{
+    display: none;
 }
 
-/* Compétences */
+/* Hard Skills & Soft Skills*/
 
 .skills h3 {
-  text-align: center;
+    text-align: center;
+    padding: 10px 0 5px;
+    margin: 15px 0 5px;
+    color: #006d4c;
 }
 
-.skill {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
+.skill_list {
+    margin: 0 15px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    padding: 0 10px;
 }
 
-.skills ul li {
-  width: 230px;
-  padding-left: 20px;
+.skill_list p {
+    text-transform: lowercase;
 }
 
-.skills ul li i {
-  width: 25px;
+.skill_list i,
+.skill_list p {
+    margin-left: 20px;
+}
+#html, #css{
+    margin-left:0;
+}
+
+.language_list {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1.5fr 2fr 1.5fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
 }
 
 .logo {
-  width: 40px;
-  border-radius: 50px;
+    width: 40px;
+    border-radius: 50px;
+    text-align: center;
+    margin-left: 50%;
+    justify-content: center;
 }
 
 /* Loisirs */
 
 .hobbies {
-  display: flex;
-  flex: row;
-  padding: 0 10px;
+    display: flex;
+    flex: row;
+    padding: 20px 10px;
 }
 
 .hobbies li {
-  width: 250px;
-  padding-bottom: 20px;
-  text-align: center;
+    width: 250px;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 /* Partie de droite */
 
-#right_part {
-  width: 60%;
-  background-color: white;
-  padding: 30px;
-  
-}
-
 #title {
-  color: #006d4c;
-  text-decoration: underline black;
-  text-underline-position: under;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
+    position: absolute;
+    width: 100%;
+    top: 75px;
+    text-align: center;
+    color: #006d4c;
 }
 
 #right_part h2 {
-  color: rgb(121, 194, 169);
-  text-align: center;
-  text-decoration: underline #525252;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #006d4c;
+    width: calc(100% - 200px);
+    margin: 10px auto;
+    padding-top: 15px;
+    color: rgb(121, 194, 169);
+}
+
+#right_part h2 i {
+    padding: 5px;
+}
+
+#right_part h3 {
+    padding: 10px;
 }
 
 .part_right_item {
-  margin-top: 50px;
-  margin-bottom: 30px;
-  padding-left: 15px;
+    margin: 10px auto;
 }
 
-#right_part h3 ~ p {
-  font-weight: bold;
-  padding: 5px;
+.date {
+    font-weight: bold;
+    padding: 5px;
+    margin: 0;
 }
 
-.list_task {
-  display: flex;
-  flex-flow: row wrap;
-  align-content: center;
-  padding-left: 5px;
+#right_part h3 ~ p i {
+    color: #00a876;
 }
 
-.list_task li {
-  width: 365px;
-  padding-left: 10px;
+.description_task {
+    margin: 0 25px;
+}
+
+.list_task1 {
+    display: grid;
+    padding: 0 30px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1.8fr 1.8fr;
+}
+
+.list_task2, .list_task3 {
+    display: grid;
+    padding: 0 30px;
+}
+
+/* Formation et Diplôme */
+
+.graduate {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 0px 30px;
+    align-items: center;
 }
 
 #oc {
-  width: 180px;
-  display: block;
-  width: 210px;
+    width: 120px;
+    margin-left: 30px;
 }
 
 #cnam {
-  width: 130px;
-  border-radius: 10%;
-  display: block;
-  width: 210px;
+    width: 80px;
+    margin-left: 30px;
 }
 
-.school {
-  text-align: center;
-  width: 500px;
-  height: 50px;
-  padding-left: 50px;
+#school {
+    margin-left: 30px;
 }
-.school2 {
-    text-align: center;
-    width: 500px;
-    height: 50px;
-    padding-left: 200px;
-  }
+
+#recommendation{
+    padding: 5px 30px;    
+}
+
+.part_right_item1 {
+    margin: 10px auto;
+    padding-bottom:10px; 
+    line-height: 1.2rem;
+}
