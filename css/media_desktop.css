@@ -5,8 +5,10 @@
 
 /* Partie de Gauche */
 #left_part {
-    width: 40%;
+    width: 30%;
 }
+
+
 
 #photo {
     display: block;
@@ -17,10 +19,6 @@
 #name {
     padding-top: 20px;
     padding-bottom: 0;
-}
-
-.presentation {
-    margin: 30px 0 10px;
 }
 
 .presentation > p {
@@ -40,44 +38,34 @@
     text-align: center;
 }
 
-/* Hard Skills & Soft Skills*/
-
-.skills h3 {
-    padding: 15px 0 25px;
-    margin: 0;
-   font-size: 1.5rem;
+#hobbies {
+    margin-top: 200px;
 }
-
-.skill_list {
-    grid-template-columns: 30% 70%;
-    margin:0px;
-}
-
-.skill_list i, #html_css {
-    margin-left:inherit;
-    text-align: center;
-    margin-left: 0;
-}
-
-.skill_list p {
-    margin-left: 0;
-    text-transform: inherit;
-}
-
-
 
 /* Partie de droite */
 
 #right_part {
-    width: 60%;
+    width: 70%;
     padding: 30px 0;
+}
+#right_part_content{
+    margin-top: 100px;
 }
 
 #title {
     position: inherit;
-    text-decoration: underline black;
     text-underline-position: under;
-    text-align: center;
+    text-align: left;
+    padding-left: 30px;
+    margin-top: 50px;
+}
+
+#title h3 {
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
 }
 
 #right_part h2 {
@@ -85,41 +73,14 @@
     margin-top: 30px;
 }
 
-.part_right_item {
-    margin: 10px 30px;
-    padding-left: 15px;
+.graduate, .xp {
+    display: flex;
+    justify-content: space-around;
 }
 
-.part_right_item li {
-    margin: 20px 0;
-}
-
-.list_task {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1.5fr;
-    grid-template-rows: repeat(3, 1fr);
-    align-items: center;
-    padding-left: 10px;
-}
-
-.list_task1 {
-    grid-template-rows: 1fr 1fr 1fr 1fr 1.8fr 1fr;
-}
-
-.list_task3 li{
-    padding: 0 0px;
-    margin: 10px 0;
-}
-
-#oc {
-    width: 200px;
-    margin-left:inherit;
-}
-
-#cnam {
-    width: 130px;
-    margin-left:inherit;
+.graduate_detail, 
+.xp_detail {
+    flex-basis: 60%;
 }
 
 #recommendation{

@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    max-width: 1200px;
 }
 
 .container {
@@ -14,11 +15,6 @@ h1 {
 
 h2 {
     font-family: "Roboto", sans-serif;
-}
-
-h3 {
-    font-family: "Roboto", sans-serif;
-    text-decoration: underline;
 }
 
 ul li {
@@ -41,7 +37,7 @@ ul li {
 #name {
     margin: auto;
     text-align: center;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-underline-position: under;
     color: black;
     padding: 30px 0;
@@ -54,6 +50,11 @@ ul li {
     margin: 5px auto;
     padding: 10px;
     font-weight: 300;
+}
+
+#left_part h3 {
+    font-family: "Roboto", sans-serif;
+    text-decoration: underline;
 }
 .presentation {
     margin: 50px 0 10px;
@@ -69,50 +70,10 @@ ul li {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    
 }
 
-#infos i{
+#infos i {
     display: none;
-}
-
-/* Hard Skills & Soft Skills*/
-
-.skills h3 {
-    text-align: center;
-    padding: 10px 0 5px;
-    margin: 15px 0 5px;
-    color: #006d4c;
-}
-
-.skill_list {
-    margin: 0 15px;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: repeat(3, 1fr);
-    align-items: center;
-    padding: 0 10px;
-}
-
-.skill_list p {
-    text-transform: lowercase;
-}
-
-.skill_list i,
-.skill_list p {
-    margin-left: 20px;
-}
-#html, #css{
-    margin-left:0;
-}
-
-.language_list {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1.5fr 2fr 1.5fr 2fr;
-    grid-template-rows: repeat(2, 1fr);
-    align-items: center;
 }
 
 .logo {
@@ -125,12 +86,12 @@ ul li {
 
 /* Loisirs */
 
-.hobbies {
+.hobbies_icons {
     display: flex;
     padding: 20px 10px;
 }
 
-.hobbies li {
+.hobbies_icons li {
     width: 250px;
     padding-bottom: 20px;
     text-align: center;
@@ -141,16 +102,24 @@ ul li {
 #title {
     position: absolute;
     width: 100%;
-    top: 75px;
+    top: 10px;
     text-align: center;
+    color: black;
+}
+
+#prenom {
     color: #006d4c;
+}
+
+#job {
+    text-decoration: underline #006d4c;
 }
 
 #right_part h2 {
     display: flex;
-    justify-content: center;
-    border-top: 2px solid #006d4c;
-    width: calc(100% - 200px);
+    justify-content: right;
+    border-bottom: 2px solid #006d4c;
+    width: calc(100% - 100px);
     margin: 10px auto;
     padding-top: 15px;
     color: rgb(121, 194, 169);
@@ -178,50 +147,24 @@ ul li {
     color: #00a876;
 }
 
-.description_task {
-    margin: 0 25px;
-}
-
-.list_task1 {
-    display: grid;
-    padding: 0 30px;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1.8fr 1.8fr;
-}
-
-.list_task2, .list_task3 {
-    display: grid;
-    padding: 0 30px;
-}
-
 /* Formation et Diplôme */
 
-.graduate {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    padding: 0px 30px;
-    align-items: center;
+.graduate,
+.xp {
+    margin: 10px;
 }
 
-#oc {
-    width: 120px;
-    margin-left: 30px;
+.graduate i,
+.xp i {
+    color: #006d4c;
 }
 
-#cnam {
-    width: 80px;
-    margin-left: 30px;
-}
-
-#school {
-    margin-left: 30px;
-}
-
-#recommendation{
-    padding: 5px 30px;    
+#recommendation {
+    padding: 15px 30px;
 }
 
 .part_right_item1 {
     margin: 10px auto;
-    padding-bottom:10px; 
+    padding-bottom: 10px;
     line-height: 1.2rem;
 }

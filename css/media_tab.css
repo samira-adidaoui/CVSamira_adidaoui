@@ -38,10 +38,6 @@
 
 /* Partie de droite */
 
-#right_part h3 {
-    padding: 10px;
-}
-
 .part_right_item {
     margin: 10px auto;
 }
@@ -52,43 +48,15 @@
     margin: 0;
 }
 
+#right_part h3 {
+    padding: 0;
+}
+
 #right_part h3 ~ p i {
     color: #00a876;
 }
 
-.description_task {
-    margin: 0 25px;
-}
-
-.list_task1 {
-    display: grid;
-    padding: 0 30px;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1.8fr 1.8fr;
-}
-
-.list_task2 {
-    display: grid;
-    padding: 0 30px;
-}
-
 /* Formation et Diplôme */
-
-.graduate {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    padding: 0px 30px;
-    align-items: center;
-}
-
-#oc {
-    width: 120px;
-    margin-left: 30px;
-}
-
-#cnam {
-    width: 80px;
-    margin-left: 30px;
-}
 
 #school {
     margin-left: 30px;
